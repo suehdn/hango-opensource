@@ -1,7 +1,8 @@
 /* MAIN - server.js */
 
 // 기본 모듈 포함
-const express = require('express'); // 웹 프레임워크
+const express = require('express'), // 웹 프레임워크
+  dotenv = require('dotenv').config(); // 환경변수 관리용 모듈
 
 // 기본 인스턴스 생성
 const app = express(); // express를 사용하기 위한 인스턴스 생성

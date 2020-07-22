@@ -3,3 +3,6 @@
 
 # default
 **.DS_Store
+
+# sequrity
+**.env
