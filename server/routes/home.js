@@ -3,7 +3,6 @@
 // 라우팅을 위한 기본 모듈 포함
 const express = require('express'),
   router = express.Router();
-  // serialPort = require('../arduino/serial-port'); // 시리얼 통신을위한 모듈 포함
 
 // '/' 루트 경로 요청시 main 뷰 렌더링
 router.get('/', (req, res) => {
