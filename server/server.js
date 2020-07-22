@@ -10,8 +10,9 @@ const app = express(); // express를 사용하기 위한 인스턴스 생성
 const PORT = process.env.PORT || 80;
 
 // 기본 앱 세팅
-app.set('view engine', 'ejs'); // HTML 뷰 엔진은 ejs 사용
-app.use(express.static(`${__dirname}/public`)); // 프런트 개발 파일들의 정적 경로 세팅 => public
+app.set('views', './client/views'); // 뷰 엔진의 기본 경로 세팅
+app.set('view engine', 'ejs'); // 뷰 엔진은 ejs 사용
+app.use(express.static(`${__dirname}/client/public`)); // 프런트 개발 파일들의 정적 경로 세팅 => client/public
 
 // 라우팅
 app.use('/', require('./routes/home'));
